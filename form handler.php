@@ -1,0 +1,1010 @@
+<?php
+include("connection.php");
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Software Website for Techy Software</title>
+       <link rel="stylesheet" href="style.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n" crossorigin="anonymous">
+      <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="images/bgc2.jpg">
+  <link rel="preload" as="image" href="images/img2.webp">
+  <link rel="preload" as="image" href="images/img3.webp">
+  <link rel="preload" as="image" href="images/img4.jpg">
+
+</head>
+<body>
+ 
+  <!--<section class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="images/img4.jpg" width="74" height="24" alt="Adex home" class="logo-light">
+
+        <img src="images/img5.webp" width="74" height="24" alt="Adex home" class="logo-dark">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="images/logo-light.svg" width="74" height="24" alt="Adex home">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">About</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Projects</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Blog</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Contact</a>
+          </li>
+
+        </ul>
+
+        <div class="wrapper">
+          <a href="mailto:info@email.com" class="contact-link">info@email.com</a>
+
+          <a href="tel:001234567890" class="contact-link">00 (123) 456 78 90</a>
+        </div>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-dribbble"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <a href="#" class="btn btn-primary">Free Trial</a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </section>-->
+ 
+     <section class="header">
+          <nav>
+           <a href="index.html" style="color: aliceblue;font-size: 35px;">
+            Techy Software</a>
+           <div class="nav-links" id="navLinks">
+              <i class="bi bi-x-lg" onclick="hideMenu()"></i>
+                 <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                   <li><a href="blog.html">BLOG</a></li>
+                   <li><a href="contact.html">CONTACT</a></li>
+                 </ul>
+               </div>
+               <i class="bi bi-list" onclick="showMenu()"></i>
+           </nav><!---
+<div class="text-box">
+      <h1>Techy Software</h1>
+      <h2>Where Scale Meets Soul</h2> 
+ <P><i>
+  We are partners in growth, helping to scale and optimize your business through our <br>data-driven and brand-specific approach.</i></P>
+      <a href="contact.html" class="hero-btn"> Visit Us To Know More</a>
+</div>-->
+</section>
+<section class="section hero has-bg-image" aria-label="home"
+style="background-image: linear-gradient(rgba(24, 24, 34, 0.487),rgba(28, 28, 62, 0.504)), url('images/img3.webp'); background-size: cover;">
+<div class="container">
+
+  <div class="hero-content">
+
+    <h1 style="color: rgb(255, 255, 255); text-align: center;">Crafting project specific solutions with expertise.</h1>
+
+    <p class="hero-text">
+      We're a creative company that focuses on establishing long-term relationships with customers.
+    </p>
+
+    <div class="btn-wrapper">
+
+      <a href="about.html" class="btn btn-primary">Explore Now</a>
+
+
+    </div>
+
+  </div>
+
+  <div class="hero-slider" data-slider>
+    
+
+    <div class="slider-inner">
+      <ul class="slider-container" data-slider-container>
+
+        <li class="slider-item">
+
+          <figure class="img-holder" style="--width: 375; --height: 300;">
+            <img src="images/Free_Sample_By_Wix.jpg" width="575" height="550" alt="" class="img-cover">
+          </figure>
+
+        </li>
+
+    
+        <li class="slider-item">
+
+          <figure class="img-holder" style="--width: 575; --height: 550;">
+            <img src="images/img4.jpg" width="575" height="550" alt="" class="img-cover">
+          </figure>
+
+        </li>
+
+      </ul>
+    </div>
+
+    <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
+      <ion-icon name="arrow-back"></ion-icon>
+    </button>
+
+    <button class="slider-btn next" aria-label="slide to next" data-slider-next>
+      <ion-icon name="arrow-forward"></ion-icon>
+    </button>
+
+  </div>
+
+</div>
+</section>
+
+
+
+
+
+<section class="section hero has-bg-image" aria-label="home"
+style="background-image: linear-gradient(rgba(30, 30, 90, 0.832),rgba(35, 35, 87, 0.754)), url('images/bgc2.jpg'); background-size: cover;">
+<div class="container">
+
+  <div class="hero-content">
+
+    <h1 style="color: white; text-align: left;">--Our Mission--</h1>
+
+    <p class="hero-text" style="text-align: justify;">
+     Our mission is to bring digital innovation to the forefront of the legal industry and help shape its future. We believe that technology has the power to streamline processes.improve efficiency,and provide a better experience for all stakeholders.
+    </p>
+
+    <div class="btn-wrapper">
+
+      <a href="blog.html" class="btn btn-primary">Want to know more</a>
+
+      <a href="contact.html" class="btn btn-outline" style="font-size: 15px; color: white;">Contact Us</a>
+
+    </div>
+
+  </div>
+
+  <div class="hero-slider" data-slider>
+
+    <div class="slider-inner">
+      <ul class="slider-container" data-slider-container>
+
+        <li class="slider-item">
+
+          <figure class="img-holder" style="--width: 575; --height: 550;">
+            <img src="images/istockphoto-1150734727-170667a.webp" width="575" height="550" alt="" class="img-cover">
+          </figure>
+
+        </li>
+
+
+      </ul>
+    </div>
+  </div>
+
+</div>
+</section>
+
+
+
+
+
+ <!--course-->
+
+
+     <!--whAt we offer--><!--
+ <section class="offer">
+    <h1> What We Offer</h1>
+  <p><i>The phenomenon Different from regular communities, these walled residential complexes with manned entrances promise higher security to an exclusive community, thus earning the name gates communities.“From an investment perspective gated communities are a good option, as most of these zones are located in premium areas. The building quality of homes in gated communities is also better since they are individually operated”.</i></p>
+      <div class="row">
+         <div class="offer-col">
+            <img src="images/Screenshot%20(217).png">
+            <div class="layer">
+             <h3>COMMUNITY PROPERTY</h3>
+            </div>
+         </div>
+          <div class="offer-col">
+            <img src="images/Screenshot%20(217).png">
+            <div class="layer">
+             <h3>LUXURY VILLAS</h3>
+            </div>
+         </div>
+        <div class="offer-col">
+             <img src="images/Screenshot%20(217).png">
+            <div class="layer">
+             <h3>TOWNSHIPS</h3>
+            </div>
+         </div>
+       
+      </div>
+  
+  
+  <h2>We're Offering<br>Unmatched Services</h2>
+  <p1>As a leading custom residential gated community with 10+ Years of experience, we offer you to excellent property from a pool of 650+ experts and help you fulfill all your dreams and requirements.</p1>
+    <div class="row">
+         <div class="offer-col">
+           <img src="images/Screenshot%20(215).png">
+           <div class="layer">
+            <h3>PLots</h3>
+           </div>
+        </div>
+        <div class="offer-col">
+      <img src="images/Screenshot%20(217).png">
+      <div class="layer">
+        <h3>APPARTMENTS</h3>
+      </div>
+     </div>
+     <div class="offer-col">
+      <img src="images/Screenshot%20(217).png">
+      <div class="layer">
+        <h3>PLOTS</h3>
+      </div>
+     </div>
+    </div>
+    </section>
+ <section class="pro">
+       <h1>Previous Projects</h1>
+  <p>We have Successfully Completed 3 main Projects(Chalasani Township, Green Hills and DLF Gardencity) in Andhra Pradesh and Telangana.</p>
+  <h2>1.CHALASANI TOWNSHIP</h2>
+     <div class="row">
+  
+              <div class="pro-col">
+                    <img src="images/Screenshot%20(217).png">
+              </div>
+               <div class="pro-col">
+                   <img src="images/Screenshot%20(217).png">
+                <p> <i>we have completed the first phase and second phase is under construction.</i></p>
+               </div>
+             
+              <div class="pro-col">
+    <img src="images/Screenshot%20(217).png">
+               </div>
+     </div>
+  <h2>2.GREEN HILLS</h2>
+     <div class="row">
+  
+              <div class="pro-col">
+                <img src="images/Screenshot%20(217).png">
+              </div>
+               
+              <div class="pro-col">
+               <p><br>
+                   <br><br><i>Green Hills offers carefully thought out and considered, all plots provide wider street frontages, creating open street scapes and whelming felling of space. our diverse range of land sizes have been created specifically to accomodate the very luxury living, along with children centric areas and sit outs for elderly people ensures a peaceful living.</i></p>
+               </div>
+  
+             <div class="pro-col">
+                <img src="images/Screenshot%20(217).png">
+         
+               </div>
+             
+  
+     </div>
+ 
+ 
+      <h2>3.DLF GARDENCITY</h2>
+     <p><br><i>Proximity to industrial areas such as Balanagar, Kothur and Kondurg makes our project a favourable investment destination. Existing facilities of Corporate Giants such as Johnson and Johnson PG, Natco, and MSN Labs have already given a fillip to the real estate prices in this area. The planned development of pharma companies setting up their facilities in the proposed Pharma SEZ in the vicinity is further going to boost real estate in this location.</i> </p>
+     <div class="row">
+  
+              <div class="pro-col">
+                <img src="images/Screenshot%20(217).png">
+              </div>
+               
+              <div class="pro-col">
+                <img src="images/Screenshot%20(217).png">
+               </div>
+  
+             <div class="pro-col">
+                <img src="images/Screenshot%20(217).png">
+               </div>
+             
+  
+     </div>
+ <h2>4.Brundavan Colony</h2>
+     <div class="row">
+  
+              <div class="pro-col">
+                   <img src="images/Screenshot%20(221).png">
+              </div>
+               
+              <div class="pro-col">
+               <p><br>
+                   <br><br><i>Brudhavan Colony offers carefully thought out and considered, all plots provide wider street frontages, creating open street scapes and whelming felling of space. our diverse range of land sizes have been created specifically to accomodate the very luxury living, along with children centric areas and sit outs for elderly people ensures a peaceful living.</i></p>
+               </div>
+  
+             <div class="pro-col">
+                   <img src="images/Screenshot%20(221).png">
+         
+               </div>
+             
+  
+     </div>
+ 
+ </section>
+     <section class="pro">
+       <h1>Ongoing Projects</h1>
+   <p>All  provided by us are wider street frontages, creating open street scapes and whelming felling of space. our diverse range of land sizes have been created specifically to accomodate the very luxury living, along with children centric areas and sit outs for elderly people ensures a peaceful living.</p>
+  <h2>1.LUXURIOUS VILLAS@CHEVELLA</h2>
+     <div class="row">
+  
+              <div class="pro-col">
+                   <img src="images/Screenshot%20(215).png">
+              </div>
+               
+              <div class="pro-col">
+                  <img src="images/Screenshot%20(215).png">
+               </div>
+  
+             <div class="pro-col">
+                   <img src="images/Screenshot%20(217).png">
+         </div>
+                  
+         </div>
+         <section class="con1">
+    
+     <h1>Want to know more about our <br>Chevella Luxurious Villas project?</h1>
+     <br>
+     <br>
+     <a href="blog2.html" class="hero-btn"><b>Click here to know more</b></a>
+	     </section>
+   <section class="pro">  
+ <h2>2.FORTUNE Open Skies</h2>
+     <div class="row">
+  
+              <div class="pro-col">
+                   <img src="images/Screenshot%20(215).png">
+              </div>
+         <div class="pro-col">
+                   <img src="images/Screenshot%20(215).png">
+              </div>
+         <div class="pro-col">
+                   <img src="images/Screenshot%20(217).png">
+              </div>
+         </section>
+        <br>
+		<br>
+         </section>
+     
+        -->      
+ <!--testimonials------
+ <section class="testimonial">
+       <h1>Customer's Speak</h1>
+      <p>Don't just take our word for it, read below to see what our customers have to say about our approach </p>
+      
+    <div class="row">
+          <div class="testimonial-col">
+            <img src="images/Screenshot%20(217).png">
+               <div>
+                   <p>I had a fantastic experience with Amacon. I got the perfect and excellent property.Great service, trustworthy, and effective.</p>
+                   <h3>Sairam Naidu</h3>
+                   <i class="bi bi-star-fill"></i>
+                   <i class="bi bi-star-fill"></i>
+                   <i class="bi bi-star-fill"></i>
+                   <i class="bi bi-star-fill"></i>
+                   <i class="bi bi-star"></i>
+               </div>
+          </div>
+     <div class="testimonial-col">
+        <img src="images/Screenshot%20(217).png">
+               <div>
+                   <p>I had a fantastic experience with Amacon. I got the perfect and excellent property.Great service, trustworthy, and effective.</p>
+                   <h3>Gautam Nanda</h3>
+                   <i class="bi bi-star-fill"></i>
+                   <i class="bi bi-star-fill"></i>
+                   <i class="bi bi-star-fill"></i>
+                   <i class="bi bi-star-fill"></i>
+                   <i class="bi bi-star"></i>
+               </div>
+          </div>
+     </div>
+     <div class="row">
+          <div class="testimonial-col">
+            <img src="images/Screenshot%20(217).png">
+               <div>
+                   <p>I had a fantastic experience with Amacon. I got the perfect and excellent property.Great service, trustworthy, and effective.</p>
+                   <h3>Prasad kumar</h3>
+                   <i class="bi bi-star-fill"></i>
+                   <i class="bi bi-star-fill"></i>
+                   <i class="bi bi-star-fill"></i>
+                   <i class="bi bi-star-fill"></i>
+                   <i class="bi bi-star"></i>
+               </div>
+          </div>
+     <div class="testimonial-col">
+        <img src="images/Screenshot%20(217).png">
+               <div>
+                   <p>I had a fantastic experience with Amacon. I got the perfect and excellent property.Great service, trustworthy, and effective.</p>
+                   <h3>krishna chaithanya </h3>
+                   <i class="bi bi-star-fill"></i>
+                   <i class="bi bi-star-fill"></i>
+                   <i class="bi bi-star-fill"></i>
+                   <i class="bi bi-star-fill"></i>
+                   <i class="bi bi-star"></i>
+               </div>
+          </div>
+     </div>
+ </section>-->
+  <!-- 
+        - #ABOUT
+      -->
+      <section class="about" aria-labelledby="about-label"
+      style="background-image: linear-gradient(rgba(20, 20, 55, 0.724),rgba(35, 35, 87, 0.754)), url(images/bgc2.jpg); background-size: cover;">
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="images/Company-amico.svg" width="500" height="500" loading="lazy" alt="about banner" style="border: black;">
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle" id="about-label" style="font-size: 25px; color: white;">--Why Choose Us?--</p>
+
+            <h2 class="h2 section-title" style=" color: white;">
+              We make your spending stress-free for you to have the perfect control.
+            </h2>
+
+            <ul>
+
+        
+
+              <li class="about-item">
+                <div class="accordion-card" data-accordion>
+
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <span class="span h5" style=" color: white;">1. Top-Notch Support</span>
+                    </button>
+                  </h3>
+
+                  
+
+                </div>
+              </li>
+
+              <li class="about-item">
+                <div class="accordion-card" data-accordion>
+
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <span class="span h5" style=" color: white;">2. Exclusive Assets</span>
+                     
+                    </button>
+                  
+                  </h3>
+
+
+                </div>
+                <div class="accordion-card" data-accordion>
+
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+                      <span class="span h5" style=" color: white;">3. Professional Design</span>
+                     
+                    </button>
+                  
+                  </h3>
+                  </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+<!-- 
+        - #FEATURES
+      -->
+
+      <section class="section features" id="features" aria-label="features">
+        <h1 style="font-size: 50px; color: hsl(236, 83%, 7%);">Our Services</h1>
+          <p class="section-text text-center" style="font-size: 20px; text-align: center;">
+            Unlock innovation with our cutting-edge software solutions and services tailored to elevate your digital presence.
+          </p>
+        <div class="container">
+          
+          <ul class="grid-list">
+
+            <li>
+              <div class="features-card">
+
+                <data class="card-number" value="01">01</data>
+
+                <h3 class="h3 card-title">Business Websites</h3>
+
+                <p class="card-text">
+                  Elevate your online presence with custom-crafted websites that capture your vision and engage your audience.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="features-card">
+
+                <data class="card-number" value="02">02</data>
+
+                <h3 class="h3 card-title">E-Commerce Websites</h3>
+
+                <p class="card-text">
+                  Step into the digital marketplace with seamless online shopping experiences that empower your business to thrive.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="features-card">
+
+                <data class="card-number" value="03">03</data>
+
+                <h3 class="h3 card-title">Educational Websites</h3>
+
+                <p class="card-text">
+  Transform education in the digital age with platforms that facilitate learning and collaboration for institutions.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="features-card">
+
+                <data class="card-number" value="04">04</data>
+
+                <h3 class="h3 card-title">Career Programs</h3>
+
+                <p class="card-text">
+                  Ignite professional growth with enriching internships, bridging the gap between academic learning and real-world success.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="features-card">
+
+                <data class="card-number" value="05">05</data>
+
+                <h3 class="h3 card-title">Business Consulting</h3>
+
+                <p class="card-text">
+                  Strategic vision meets actionable plans - trust Nexus for business strategies that pave the way for sustained growth and success.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="features-card">
+
+                <data class="card-number" value="06">06</data>
+
+                <h3 class="h3 card-title">Design Services</h3>
+
+                <p class="card-text">
+                  Elevate your brand with our striking logos and captivating posters expertly crafted to leave a lasting impression.
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <section class="about" aria-labelledby="about-label"
+      style="background-image: linear-gradient(rgba(20, 20, 55, 0.724),rgba(35, 35, 87, 0.754)), url(images/bgc.jpg); background-size: cover;">
+        <div class="container">
+
+          <div class="about-content">
+
+            <p class="section-subtitle" id="about-label" style="font-size: 25px; color: white;">--Our Solutions--</p>
+
+            <h2 class="h2 section-title" style="color: white;">
+              We bring solutions to make life easier for our clients.
+            </h2>
+
+            <ul>
+
+        
+
+              <li class="about-item">
+                <div class="accordion-card" data-accordion>
+
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <span class="span h5" style="color: white;">1. Digital Transformation</span>
+                    </button>
+                  </h3>
+
+                  
+
+                </div>
+              </li>
+
+              <li class="about-item">
+                <div class="accordion-card" data-accordion>
+
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <span class="span h5" style="color: white;">2. Software Integration</span>
+                     
+                    </button>
+                  
+                  </h3>
+
+
+                </div>
+                </li>
+                <li class="about-item">
+                <div class="accordion-card" data-accordion>
+
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+                      <span class="span h5" style="color: white;">3. Custom Software Solutions</span>
+                     
+                    </button>
+                  
+                  </h3>
+                  </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <figure class="about-banner">
+            <img src="images/Consulting-bro.svg" width="500" height="500" loading="lazy" alt="about banner" style="border: black;">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+    
+
+ <section class="contact-us">
+    
+  <div class="row" >
+
+
+      <div class="contact-col">
+        <h2 style="color: rgb(15, 5, 51); font-size: 35px; text-align: left;font-family:sans-serif;">CONTACT US</h2>
+           <br><form action="form handler.php" method="post">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email"placeholder="Email Address" required>
+            
+                <input  type="tel" name="contact" placeholder="Contact Number" required></textarea>
+                <button type="submit" class="hero-btn red-btn">Submit</button>
+          </form>  
+    </div>
+          <div class="contact-col"><br><br>
+            <figure class="about-banner">
+              <img src="images/Get in touch-amico (2).svg" width="500" height="500" loading="lazy" alt="about banner" style="border: black;">
+            </figure>
+  
+        
+      </div>
+</div>
+</section>
+<!--<secti,on class="cta">
+     <h1>Want to know more about our community?</h1>
+     <p>Let's find us and see what our community can do for you.<br> Techy Software, which can help accelerate your dreams into reality.</p><br>
+     <br>
+     <a href="contact.html" class="hero-btn"><b>CONTACT US</b></a> 
+</section>-->
+     <!-- 
+       - #FOOTER
+     -->
+   
+     <footer class="footer" id="contact">
+   
+       <div class="footer-top section">
+         <div class="container">
+   
+           <div class="footer-brand">
+   
+             <a href="#" class="logo">Techy Software</a>
+   
+<!--<p class="footer-text">
+               From code to classroom and media mastery, we empowers excellence across the digital landscape, harmonizing software, learning, and media for a holistic journey into the future.
+             </p>-->
+   
+           
+           </div>
+   
+           <ul class="footer-list">
+   
+             <li>
+               <p class="footer-list-title">Our Services</p>
+             </li>
+   
+             <li>
+               <a href="#" class="footer-link">Software & Service</a>
+             </li>
+   
+             <li>
+               <a href="#" class="footer-link">E-Learning</a>
+             </li>
+   
+             <li>
+               <a href="#" class="footer-link">Media & Branding</a>
+             </li>
+   
+             <li>
+               <a href="#" class="footer-link">Digital Marketing</a>
+             </li>
+   
+             <li>
+               <a href="#" class="footer-link">Business Strategies</a>
+             </li>
+   
+             <li>
+               <a href="#" class="footer-link">Career Growth</a>
+             </li>
+   
+           </ul>
+   
+           <ul class="footer-list">
+   
+             <li>
+               <p class="footer-list-title">Overview</p>
+             </li>
+   
+             <li>
+               <a href="#" class="footer-link">About Company</a>
+             </li>
+   
+            
+             <li>
+               <a href="#" class="footer-link">Service</a>
+             </li>
+   
+             <li>
+               <a href="#" class="footer-link">Q & A</a>
+             </li>
+   
+             <li>
+               <a href="#" class="footer-link">Contact Us</a>
+             </li>
+   
+           </ul>
+   
+           <ul class="footer-list">
+   
+             <li>
+               <p class="footer-list-title">Contact Us</p>
+             </li>
+   
+             <li class="footer-item">
+               <ion-icon name="location" aria-hidden="true"></ion-icon>
+   
+               <address class="contact-link address">
+                 Coimbatore south, Tamilnadu
+               </address>
+             </li>
+   
+             <li class="footer-item">
+               <ion-icon name="mail" aria-hidden="true"></ion-icon>
+   
+               <a href="mailto:info@hoolix.com" target="_blank" class="contact-link">contact.techysoftware@gmail.com</a>
+             </li>
+   
+           
+   
+             <li class="footer-item">
+               <ul class="social-list">
+   
+                 <li>
+                  <a href="https://www.facebook.com/profile.php?id=100071572537388" target="_blank"><i class="bi bi-facebook" ></i></a>
+                     <ion-icon name="logo-facebook"></ion-icon>
+                  
+                 </li>
+   
+                 <li>
+                  <a href="https://www.facebook.com/profile.php?id=100071572537388" target="_blank"><i class="bi bi-twitter" ></i></a>
+                     <ion-icon name="logo-twitter"></ion-icon>
+                  
+                 </li>
+   
+                 <li>
+                  <a href="https://www.facebook.com/profile.php?id=100071572537388" target="_blank"><i class="bi bi-instagram" ></i></a>
+                     <ion-icon name="logo-instagram"></ion-icon>
+                   
+                 </li>
+   
+                 <li>
+                  <a href="https://www.facebook.com/profile.php?id=100071572537388" target="_blank"><i class="bi bi-linkedin" ></i></a>
+                     <ion-icon name="logo-Linkedin"></ion-icon>
+                  
+                 </li>
+   
+               </ul>
+             </li>
+   
+           </ul>
+   
+         </div>
+       </div>
+   
+       <div class="footer-bottom">
+         <div class="container">
+   
+           <p class="copyright">
+             &copy; 2024 TECH | All Rights Reserved by <a href="#" class="copyright-link">TechySoftware Group</a>
+           </p>
+   
+           <ul class="footer-bottom-list">
+   
+             <li>
+               <a href="#" class="footer-bottom-link">Privacy Policy</a>
+             </li>
+   
+             <li>
+               <a href="#" class="footer-bottom-link">Terms of Use</a>
+             </li>
+   
+           </ul>
+   
+         </div>
+       </div>
+   
+     </footer>
+   
+   
+   <!---
+
+
+ 
+    <section class="head">
+    
+        <h1>Accelerate</h1> <h2>your</h2><h1>Growth</h1>
+        
+              <div class="cont-col">
+                  <div>
+                   <i class="bi bi-telephone-inbound-fill"></i>
+                      <span>
+                          <h3> +91 8989898939</h3>
+                        <p></p>
+                      </span>
+                  </div>
+                  <div>
+                    <i class="bi bi-envelope-fill"></i>
+                      <span>
+                          <h5>amacondevelopers@gmail.com</h5>
+                          <p></p>
+                      </span>
+                  </div>
+    
+            
+              </div>
+</section>
+    </section>
+    
+      <section class="footer">
+    
+        <h1>About Us</h1>
+        <p>Visit us to know more details</p>
+        <div class="social-links">
+					<ul>
+        <li><a href="https://www.facebook.com/profile.php?id=100071572537388" target="_blank"><i class="bi bi-twitter" ></i></a></li>
+		<li><a href="https://www.facebook.com/profile.php?id=100071572537388" target="_blank"><i class="bi bi-facebook" ></i></a></li>						<li><a href="https://instagram.com/amacon_developers_?igshid=YmMyMTA2M2Y=" target="_blank"><i class="bi bi-instagram" ></i></a></li>
+								</ul>
+                      <p class="copyright">Copyright © Amacon Ventures Pvt Ltd</p>
+				</div>
+    
+    
+    </section>
+  -->
+<!----------JS for toggle menu-------->
+<script>
+      
+      var navLinks = document.getElementById("navLinks");
+      function showMenu(){
+          navLinks  .style.right = "0";
+       
+      }
+      function hideMenu(){
+          navLinks.style.right = "-200px";
+       
+      }  
+</script>
+    <script>
+    
+        function whatsapp(){
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var phone = document.getElementById("phone").value;
+        var date = document.getElementById("date").value;
+        var message = document.getElementById("message").value;
+    
+    var url = "https://wa.me/916301757270?text="
+    +"Name:"+name+"%0a"
+     +"Email:"+email+"%0a"
+     +"Phone:"+phone+"%0a"
+     +"Date:"+date+"%0a"
+     +"NMessage:"+message;
+    windows.open(url,'_blank').focus();
+        }
+    </script>
+</body>
+</html>
